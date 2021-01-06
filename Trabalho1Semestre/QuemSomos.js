@@ -1,4 +1,4 @@
-function openCity(evt, cityName) {
+function openPage(evt, pageName) {
   //Declarar as variáveis
   var i, tabcontent, tablinks;
 
@@ -15,19 +15,7 @@ function openCity(evt, cityName) {
   }
 
   //Mostrar a tab atual e adiciona a classe "active" ao botão que abriu a tab
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(pageName).style.display = "block";
   evt.currentTarget.className += " active";
 
-}
-
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
 }
