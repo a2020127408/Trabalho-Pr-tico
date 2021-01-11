@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .tab {
   position: relative;
-  top: 50px;
+  top: 5px;
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #c5c3c6;
@@ -32,13 +32,13 @@
 /* Estilo do conteúdo da guia */
 .tabcontent {
   position: relative;
-  top: 50px;
+  top: 10px;
   display: none;
   padding: 6px 12px;
   border-top: none;
 }
 
-@media screen and (max-width: 525px) {
+@media all and (max-width: 525px) {
   .tab {
     float: left;
     width: 30%;
