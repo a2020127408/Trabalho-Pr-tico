@@ -22,16 +22,20 @@ body {
   
 
   /*Menu geral*/
-  #navbar {
-    background-color: #856b7e;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.3s;
+  
+  /*  nav  menu  */
+  nav{
+      background-color: #856b7e;
+      opacity: 0.7;
   }
   
-  /* Estilo dos links do menu geral */
-  #navbar a {
+/* Menu */
+  .menu li {
+    /*padding: 7px 10px;*/
+    list-style-type: none;
+  }
+
+  .menu li a{
     font-weight: bold;
     float: left;
     display: block;
@@ -40,9 +44,73 @@ body {
     padding: 15px;
     text-decoration: none;
   }
-  
-  #navbar a:hover {
-    background-color: #a18a9b;
+
+  .menu li:hover{
     color: black;
+    background-color:#a18a9b;
+    cursor: pointer;
   }
+     
+.menu:not(.grid) {
+  display: flex;
+}
+     
+.menu.grid{
+display: grid;
+grid-template-columns: auto auto auto 1fr;
+}
+.menu ul{
+display: grid;
+}
+
+label{
+display: none;
+font-size: 22px;
+padding-left: 5px;
+}
+
+#toggle{
+display: none;
+}
+
+@media all and (max-width : 575px) {
+  body{
+    font-size: 90%;
+  }
+
+  .menu:not(.grid){
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu.grid{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .menu>*:last-child{
+    margin-left: 0;
+  }
+
+  .sandwich label{
+    display: block;
+  }
+
+  .sandwich .menu{
+    display: none;
+  }
+
+  .sandwich .menu{
+    margin: -30px 0px 0px 30px;
+    text-align: left;
+  }
+
+  .sandwich #toggle:checked + .menu:not(.grid) {
+    display: flex;
+  }
+
+  .sandwich #toggle:checked + .menu.grid {
+    display: grid;
+  }
+}
   
