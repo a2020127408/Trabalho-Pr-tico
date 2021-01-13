@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 body {
     background-color: #ebedef;
     margin: 0;
@@ -9,15 +7,18 @@ body {
   
   h1 {
     color: #900c3f;
-    font-style: Georgia, serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   h2 {
     color: #fcd148;
+    font-size: 30px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
   }
   
   p {
-    font-size: larger;
+    font-size: 20px;
+    font-family: 'Archivo', sans-serif;
   }
   
 
@@ -31,11 +32,12 @@ body {
   
 /* Menu */
   .menu li {
-    /*padding: 7px 10px;*/
     list-style-type: none;
   }
 
   .menu li a{
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     float: left;
     display: block;

@@ -9,6 +9,8 @@
 
 /* Estilo dos botões para abrir conteúdo da guia */
 .tab button {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
   font-weight: bold;
   background-color: #c5c3c6;
   float: left;
