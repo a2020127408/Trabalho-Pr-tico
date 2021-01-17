@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px;
+    border-collapse: collapse;
+}
+  
+table.center {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+@media all and (max-width : 575px) {
+    table{
+        margin-top: 10px;
+    }
+}

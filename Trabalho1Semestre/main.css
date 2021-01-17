@@ -8,19 +8,25 @@ body {
   h1 {
     color: #900c3f;
     font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
   }
-  
+
   h2 {
     color: #fcd148;
     font-size: 30px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin-left: 20px;
   }
   
   p {
     font-size: 20px;
     font-family: 'Archivo', sans-serif;
+    margin-left: 20px;
   }
   
+  a{
+    margin-left: 20px;
+  }
 
   /*Menu geral*/
   
@@ -75,6 +81,65 @@ padding-left: 5px;
 display: none;
 }
 
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnavbtn{
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #fdfd96;
+  text-align: center;
+  text-decoration: none;
+}
+/* Subnav button */
+.subnav .subnavbtn {
+  border: none;
+  outline: none;
+  padding: 15px 16px;
+  background-color: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:#a18a9b;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #a18a9b;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #856b7e;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+
+
 @media all and (max-width : 575px) {
   body{
     font-size: 90%;
@@ -115,4 +180,6 @@ display: none;
     display: grid;
   }
 }
-  
+ 
+
+

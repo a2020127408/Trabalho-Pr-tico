@@ -8,8 +8,11 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Montserrat&family=Yanone+Kaffeesatz:wght@400&family=Archivo&display=swap"
       rel="stylesheet">
   
-    <title>Document</title>
+    <title>Recursos</title>
+    <link rel="icon" href="img/usf.png" type="image/png">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Recursos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="main.js" type="text/javascript"></script>
 </head>
 <body>
@@ -17,7 +20,17 @@
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle"/>
         <ul class="menu grid">
-          <li><a href="QuemSomos.html">Quem somos</a></li>
+          <li>
+            <div class="subnav">
+              <button class="subnavbtn">Quem somos <i class="fa fa-caret-down"></i></button>
+              <div class="subnav-content">
+                <a href="InfoGeral.html">Informação geral</a>
+                <a href="Equipa.html">Equipa</a>
+                <a href="Contactos.html">Contactos</a>
+                <a href="Localizacao.html">Localização</a>
+              </div>
+            </div>
+          </li>
           <li><a href="OQueFazemos.html">O que fazemos</a></li>
           <li><a href="Indicadores.html">Indicadores</a></li>
           <li><a href="MaisApoio.html">Mais apoio</a></li>
@@ -25,5 +38,19 @@
         </ul>
       </nav>
     
+      <table class="center">
+        <tr>
+          <th>Documentos</th>
+        </tr>
+        <tr>
+          <td>Carta de Compromisso</td>
+          <td><a href="docs/CartaDeCompromisso.pdf" download><i class="material-icons">download</i></a></td>
+        </tr>
+        <tr>
+          <td>Logotipo</td>
+          <td><a href="img/usf.png" download><i class="material-icons">download</i></a></td></td>
+        </tr>
+      </table>
+
 </body>
 </html>

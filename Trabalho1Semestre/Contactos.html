@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +10,13 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="ContacteNos.css">
     <script src="main.js" type="text/javascript"></script>
-    <script src="ContacteNos.js" type="text/javascript"></script>
+
     <link rel="icon" href="img/usf.png" type="image/png">
-
-    <title>Contacte-nos</title>
+    <title>Contactos</title>
 </head>
-
 <body>
+    
     <nav class="sandwich">
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle" />
@@ -30,7 +27,6 @@
                 <div class="subnav-content">
                   <a href="InfoGeral.html">Informação geral</a>
                   <a href="Equipa.html">Equipa</a>
-                  <a href="Contactos.html">Contactos</a>
                   <a href="Localizacao.html">Localização</a>
                 </div>
               </div>
@@ -39,37 +35,19 @@
             <li><a href="Indicadores.html">Indicadores</a></li>
             <li><a href="Recursos.html">Recursos</a></li>
             <li><a href="MaisApoio.html">Mais apoio</a></li>
+            <li><a href="ContacteNos.html">Contacte-nos</a></li>
         </ul>
     </nav>
     
-    <h1>Contacte-nos</h1>
+    <h2>Telefone</h2>
+    <p>234523157</p>
 
-    <p>Escolha a opção</p>
-    <p id="message">
-        Thank you for contacting us. We will be in touch with you very soon.
-    </p>
-    <form>
-        <select name="option" id="option" required>
-            <option value="" disabled selected hidden>Selecione...</option>
-            <option value="duvidas">Esclarecimento de dúvidas</option>
-            <option value="saab">Reclamações</option>
-            <option value="mercedes">Sugestões</option>
-        </select>
-        <br><br>
+    <h2>Email</h2>
+    <a href="mailto:usf.rainhadonatereza@arscentro.min-saude.pt">usf.rainhadonatereza@arscentro.min-saude.pt</a>
 
-        <textarea id="mensagem" rows="4" cols="50" placeholder="Insira a sua mensagem..." required></textarea>
-        <br><br>
-
-        <div class="row buttons">
-            <input type="submit" id="btnSubmicao" value="Submeter formulário">
-        </div>
-
-        <div id="painel-status" class="row">
-            <span id="situacao"></span><br />
-            <span id="msg"></span>
-        </div>
-    </form>
+    <h2>Horário</h2>
+    <p>De 2ª a 6ª feira: 08:00 às 18:00</br>
+        Sábados, domingos e feriados: Encerrado</p>
 
 </body>
-
 </html>

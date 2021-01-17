@@ -141,10 +141,10 @@ function drawEfi() {
     dataEfi.addColumn('string', 'de');
     dataEfi.addColumn('number', 'Percentagem');
     dataEfi.addRows([
-        ['de medicamentos por consulta', 97],
-        ['de medicamentos por médico e por consulta', 70],
-        ['de meios complementares de diagnóstico e terapêutica, por consulta', 69],
-        ['o de meios complementares de diagnóstico e terapêutica, por médico e por consulta', 22]
+        ['medicamentos/consulta', 97],
+        ['medicamentos/médico', 70],
+        ['meios complementares/consulta', 69],
+        ['meios complementares/médico', 22]
     ]);
 
     var optionsEfi = {

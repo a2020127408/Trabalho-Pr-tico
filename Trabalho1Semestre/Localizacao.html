@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +10,13 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="ContacteNos.css">
     <script src="main.js" type="text/javascript"></script>
-    <script src="ContacteNos.js" type="text/javascript"></script>
+
     <link rel="icon" href="img/usf.png" type="image/png">
-
-    <title>Contacte-nos</title>
+    <title>Localização</title>
 </head>
-
 <body>
+
     <nav class="sandwich">
         <label for="toggle">&#9776;</label>
         <input type="checkbox" id="toggle" />
@@ -31,7 +28,6 @@
                   <a href="InfoGeral.html">Informação geral</a>
                   <a href="Equipa.html">Equipa</a>
                   <a href="Contactos.html">Contactos</a>
-                  <a href="Localizacao.html">Localização</a>
                 </div>
               </div>
             </li>
@@ -39,37 +35,18 @@
             <li><a href="Indicadores.html">Indicadores</a></li>
             <li><a href="Recursos.html">Recursos</a></li>
             <li><a href="MaisApoio.html">Mais apoio</a></li>
+            <li><a href="ContacteNos.html">Contacte-nos</a></li>
         </ul>
     </nav>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d786.0638702769205!2d-8.482845237430636!3d40.68548391641135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23757f9e40a2c1%3A0xb5d57121d6e7e4f1!2sCentro%20de%20Sa%C3%BAde%20Albergaria-a-Velha!5e0!3m2!1spt-PT!2spt!4v1605809767720!5m2!1spt-PT!2spt"
+        width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+
+    <p>USF Rainha D. Tereza
+        Rua 25 de Abril
+        3850-004 Albergaria-a-Velha</p>
     
-    <h1>Contacte-nos</h1>
-
-    <p>Escolha a opção</p>
-    <p id="message">
-        Thank you for contacting us. We will be in touch with you very soon.
-    </p>
-    <form>
-        <select name="option" id="option" required>
-            <option value="" disabled selected hidden>Selecione...</option>
-            <option value="duvidas">Esclarecimento de dúvidas</option>
-            <option value="saab">Reclamações</option>
-            <option value="mercedes">Sugestões</option>
-        </select>
-        <br><br>
-
-        <textarea id="mensagem" rows="4" cols="50" placeholder="Insira a sua mensagem..." required></textarea>
-        <br><br>
-
-        <div class="row buttons">
-            <input type="submit" id="btnSubmicao" value="Submeter formulário">
-        </div>
-
-        <div id="painel-status" class="row">
-            <span id="situacao"></span><br />
-            <span id="msg"></span>
-        </div>
-    </form>
-
 </body>
-
 </html>
