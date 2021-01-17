@@ -31,12 +31,11 @@ h1{
 
 .registo.active{
   display: block;
-
 }
 
 .registo{
   display: none;
-  margin-left: 45%;
+  margin-left: 40.75%;
   position: relative;
   text-decoration: none;
   color: #900c3f;  
@@ -45,7 +44,7 @@ h1{
 .regist{
   position: relative;
   cursor: pointer;
-  padding:20px  ;
+  padding: 20px;
 }
 
 .regist:hover{
@@ -67,7 +66,7 @@ h1{
   position: relative;
 }
 
-#login{
+#login, #btnRegisto{
   position: relative;
   margin-left: 55px;
   font-size: 20px;

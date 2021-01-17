@@ -120,6 +120,15 @@
     .slideshow {
       width: 75%;
       height:75%;
-  
+      top:165px
+    }
+    .bar{
+      width: 35px;
+      height:8px;
+    }
+    .Programas{
+      position: relative;
+     padding: 80px;
+      
     }
   }

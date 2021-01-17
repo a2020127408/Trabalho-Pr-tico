@@ -9,3 +9,7 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 }
+
+function Logout(){
+  location.replace("Login.html");
+}

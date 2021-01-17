@@ -138,6 +138,12 @@ display: none;
 }
 
 
+#logout{
+  position: relative;
+  float: right;
+  bottom: 50px;
+  right: 20px;
+}
 
 
 @media all and (max-width : 575px) {
