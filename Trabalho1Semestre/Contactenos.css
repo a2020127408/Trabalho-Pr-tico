@@ -1,0 +1,7 @@
+#message {
+    display: none;
+}
+  
+#message.show {
+    display: block;
+}

@@ -1,6 +1,8 @@
+var painelStatus = document.querySelector('#painel-status');
+var i, tabcontent, tablinks;
+
 function openPage(evt, pageName) {
   //Declarar as variáveis
-  var i, tabcontent, tablinks;
 
   //Esconder todos os elementos com class="tabcontent"
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -17,5 +19,4 @@ function openPage(evt, pageName) {
   //Mostrar a tab atual e adiciona a classe "active" ao botão que abriu a tab
   document.getElementById(pageName).style.display = "block";
   evt.currentTarget.className += " active";
-
 }

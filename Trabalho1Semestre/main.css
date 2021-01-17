@@ -59,7 +59,7 @@ body {
      
 .menu.grid{
 display: grid;
-grid-template-columns: auto auto auto auto auto 1fr;
+grid-template-columns: auto auto auto auto auto auto 1fr;
 }
 .menu ul{
 display: grid;

@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Montserrat&family=Yanone+Kaffeesatz:wght@400&family=Archivo&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="Indicadores.css">
   <link rel="stylesheet" href="main.css">
   <script src="main.js" type="text/javascript"></script>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="Indicadores.js" type="text/javascript"></script>
+
+  <link rel="icon" href="img/usf.png" type="image/png">
+  <title>Indicadores</title>
 </head>
+
 <body>
   <nav class="sandwich">
-      <label for="toggle">&#9776;</label>
-      <input type="checkbox" id="toggle"/>
-      <ul class="menu grid">
-        <li><a href="QuemSomos.html">Quem somos</a></li>
-        <li><a href="OQueFazemos.html">O que fazemos</a></li>
-        <li><a href="Recursos.html">Recursos</a></li>
-        <li><a href="MaisApoio.html">Mais apoio</a></li>
-      </ul>
-    </nav>
-  
+    <label for="toggle">&#9776;</label>
+    <input type="checkbox" id="toggle" />
+    <ul class="menu grid">
+      <li><a href="QuemSomos.html">Quem somos</a></li>
+      <li><a href="OQueFazemos.html">O que fazemos</a></li>
+      <li><a href="Recursos.html">Recursos</a></li>
+      <li><a href="MaisApoio.html">Mais apoio</a></li>
+      <li><a href="ContacteNos.html">Contacte-nos</a></li>
+    </ul>
+  </nav>
+  <!--Div that will hold the pie chart-->
+  <div class="container">
+    <div class="gallery">
+      <div id="item-1">
+        <h2>Disponibilidade</h2>
+        <div id="disponibilidade"></div>
+      </div>
+      <div id="item-2">
+        <h2>Acessibilidade</h2>
+        <div id="acessibilidade"></div>
+      </div>
+      <div id="item-3">
+        <h2>Produtividade</h2>
+        <div id="produtividade"></div>
+      </div>
+      <div id="item-4">
+        <h2>Qualidade técnico-ciêntífica</h2>
+        <div id="qualidade"></div>
+      </div>
+      <div id="item-5">
+        <h2>Efectividade</h2>
+        <div id="efectividade"></div>
+      </div>
+      <div id="item-6">
+        <h2>Eficiência</h2>
+        <div id="eficiencia"></div>
+      </div>
+
+    </div>
+  </div>
+
 </body>
+
 </html>

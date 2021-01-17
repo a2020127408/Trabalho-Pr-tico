@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Montserrat&family=Yanone+Kaffeesatz:wght@400&family=Archivo&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="ContacteNos.css">
+    <script src="main.js" type="text/javascript"></script>
+    <script src="ContacteNos.js" type="text/javascript"></script>
+    <link rel="icon" href="img/usf.png" type="image/png">
+
+    <title>Contacte-nos</title>
+</head>
+
+<body>
+    <nav class="sandwich">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <ul class="menu grid">
+            <li><a href="QuemSomos.html">Quem somos</a></li>
+            <li><a href="OQueFazemos.html">O que fazemos</a></li>
+            <li><a href="Indicadores.html">Indicadores</a></li>
+            <li><a href="Recursos.html">Recursos</a></li>
+            <li><a href="MaisApoio.html">Mais apoio</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Contacte-nos</h1>
+
+    <p>Escolha a opção</p>
+    <p id="message">
+        Thank you for contacting us. We will be in touch with you very soon.
+    </p>
+    <form>
+        <select name="option" id="option" required>
+            <option value="" disabled selected hidden>Selecione...</option>
+            <option value="duvidas">Esclarecimento de dúvidas</option>
+            <option value="saab">Reclamações</option>
+            <option value="mercedes">Sugestões</option>
+        </select>
+        <br><br>
+
+        <textarea id="mensagem" rows="4" cols="50" placeholder="Insira a sua mensagem..." required></textarea>
+        <br><br>
+
+        <div class="row buttons">
+            <input type="submit" id="btnSubmicao" value="Submeter formulário">
+        </div>
+
+        <div id="painel-status" class="row">
+            <span id="situacao"></span><br />
+            <span id="msg"></span>
+        </div>
+    </form>
+
+</body>
+
+</html>
