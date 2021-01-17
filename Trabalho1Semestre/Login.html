@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&family=Teko:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Login.css">
+    <script src="main.js" type="text/javascript"></script>
+    <script src="Login.js" type="text/javascript"></script>
+    <link rel="icon" href="img/usf.png" type="image/png">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="tudo">
+        <div class="optns">
+            <h1 class="logs" onclick="aparecer()">Login</h1>
+            <h1 class="regist" onclick="aparecerreg()">Registar</h1>
+        </div>
+        <div class="stress active">
+            <div>
+                <input type="text" id="utilizador" name="utilizador" placeholder="Utilizador" required>
+                <g class="alerts"></g>
+            </div>
+            <br>
+            <div id="alt">
+                <input type="password" id="senha" name="senha" placeholder="Palavra-passe" required>
+                <g class="alerts"></g>
+            </div>
+            <br><br>
+            <button onclick="myFunction()" id="login">Login</button>
+        </div>
+
+        <div class="registo">
+            <div>
+                <input type="text" id="user" placeholder="Utilizador" required>
+                <span></span>
+            </div>
+            <br>
+            <div>
+                <input type="password" id="pass" placeholder="Palavra-passe" required>
+                <span></span>
+            </div>
+            <br><br>
+            <button onclick="registo()">Registar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body{
+  background-color: #FFFFE0 !important;
+  padding: 10px;
+}
+
+h1{
+  font-family: 'Teko', sans-serif !important;
+}
+.stress.active{ 
+  margin-left: 40.75%;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: #900c3f;  
+  
+}
+.stress{
+  display: none;
+}
+
+.alerts{
+  color: red;
+}
+
+#usuario{
+  position: relative;
+  display:none;
+  color: black;
+  float: right;
+}
+
+.registo.active{
+  display: block;
+
+}
+
+.registo{
+  display: none;
+  margin-left: 45%;
+  position: relative;
+  text-decoration: none;
+  color: #900c3f;  
+}
+
+.regist{
+  position: relative;
+  cursor: pointer;
+  padding:20px  ;
+}
+
+.regist:hover{
+    background-color:#FFE4B5;
+}
+.logs:hover{
+  background-color:#FFE4B5;
+}
+.logs{
+  position: relative;
+  cursor: pointer;
+  padding: 20px;
+  
+}
+
+.optns{
+  display: flex;
+  margin-left: 37.5%;
+  position: relative;
+}
+
+#login{
+  position: relative;
+  margin-left: 55px;
+  font-size: 20px;
+  font-family: 'Archivo', sans-serif;
+}

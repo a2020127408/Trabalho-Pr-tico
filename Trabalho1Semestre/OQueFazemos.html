@@ -24,15 +24,15 @@
         <input type="checkbox" id="toggle" />
         <ul class="menu grid">
             <li>
-              <div class="subnav">
-                <button class="subnavbtn">Quem somos <i class="fa fa-caret-down"></i></button>
-                <div class="subnav-content">
-                  <a href="InfoGeral.html">Informação geral</a>
-                  <a href="Equipa.html">Equipa</a>
-                  <a href="Contactos.html">Contactos</a>
-                  <a href="Localizacao.html">Localização</a>
+                <div class="subnav">
+                    <button class="subnavbtn">Quem somos <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="InfoGeral.html">Informação geral</a>
+                        <a href="Equipa.html">Equipa</a>
+                        <a href="Contactos.html">Contactos</a>
+                        <a href="Localizacao.html">Localização</a>
+                    </div>
                 </div>
-              </div>
             </li>
             <li><a href="Indicadores.html">Indicadores</a></li>
             <li><a href="Recursos.html">Recursos</a></li>
@@ -41,44 +41,100 @@
         </ul>
     </nav>
 
-    <div id="usuario">
-        André Silva
-        <button onclick="Logout()">Logout</button>
-    </div>>
 
-    <div class="stress">
+    <button onclick="Logout()" id="logout">Logout</button>
 
-        <div>
-            <input type="text" id="utilizador" name="utilizador" placeholder="utilizador" required>
-            <span></span>
-        </div>
-
-        <div id="alt">
-            <input type="password" id="senha" name="senha" placeholder="palavra-passe" required>
-            <button onclick="myFunction()" id="login">Login</button>
-            <span></span>
-        </div>
     </div>
-    <div class="slideshow middle ">
+    <div class="slideshow">
         <div class="slides">
             <input type="radio" name="r" id="r1" checked>
             <input type="radio" name="r" id="r2">
             <input type="radio" name="r" id="r3">
             <input type="radio" name="r" id="r4">
             <input type="radio" name="r" id="r5">
-            <div class="slide s1"> <img src="img/usf.png" alt=""></div>
-            <div class="slide"> <img src="img/usf.png" alt=""></div>
-            <div class="slide"> <img src="img/usf.png" alt=""></div>
-            <div class="slide"> <img src="img/usf.png" alt=""></div>
-            <div class="slide"> <img src="img/usf.png" alt=""></div>
+            <div class="slide s1" id="image"> <img src="img/1370958733.jpg" alt=""></div>
+            <div class="slide"> <img src="img/ecci.jpg" alt=""></div>
+            <div class="slide"> <img src="img/tabaco.jpg" alt=""></div>
+            <div class="slide"> <img src="img/cancer.jpg" alt=""></div>
+            <div class="slide"> <img src="img/vacinas.jpg" alt=""></div>
         </div>
 
+
         <div class="navigation">
-            <label for="r1" class="bar"></label>
-            <label for="r2" class="bar"></label>
-            <label for="r3" class="bar"></label>
-            <label for="r4" class="bar"></label>
-            <label for="r5" class="bar"></label>
+            <label for="r1" onclick="programas('alcolismo')" class="bar"></label>
+            <label for="r2" onclick="programas('ecci')" class="bar"></label>
+            <label for="r3" onclick="programas('tabaco')" class="bar"></label>
+            <label for="r4" onclick="programas('cancro')" class="bar"></label>
+            <label for="r5" onclick="programas('vacinas')" class="bar"></label>
+        </div>
+    </div>
+    <div class="Programas">
+        <div id="alcolismo" class="texto active">
+            <p>O <strong>alcoolismo</strong> ou &nbsp;<strong>dependência alcoólica</strong> é uma
+                <strong>doença</strong>, frequentemente crónica e progressiva que afecta milhares de pessoas em todo o
+                mundo. Os padrões nocivos e perigosos de consumo de álcool são uma das principais causas de morte
+                prematura e doenças escusáveis. É uma das piores e mais temidas doenças em todo o mundo.
+                <br><br>
+                Para todas as pessoas com problemas de álcool em recuperação, a tentação de cair no vício da bebida é
+                enorme e muito forte e isso faz com que a recuperação do alcoolismo seja uma luta constante. Na prática,
+                a forma de lidar com o alcoolismo passa pela força mental e pela capacidade de cada um em ultrapassar
+                obstáculos e dificuldades. Só assim é possível obter a recuperação do alcoolismo.
+                <br><br>
+                O tratamento do alcoolismo não é fácil, nem se estabelece de um dia para o outro. trata-se de um hábito
+                com dependência física e psíquica. Os sintomas de privação do álcool nem sempre se conseguem ultrapassar
+                sem ajuda. Planeie a sua decisão calmamente e, envolva <strong>família, amigos e colegas</strong> de
+                trabalho no processo.
+                <br><br>
+                A Equipa de Saúde da USF de Albergaria-a-Velha, apresenta uma <strong>consulta de desabituação
+                    alcoólica</strong> que tem como principal objetivo ajudar as pessoas com problemas de álcool a
+                deixar/diminuir o consumo de bebidas alcoólicas e diminuir/eliminar o número de recaídas.&nbsp;<br>É
+                realizada por um Médico e uma Enfermeira Especialista em Saúde Mental e Psiquiatria.
+            </p>
+        </div>
+        <div id="ecci" class="texto">
+            <p>Equipa multidisciplinar da responsabilidade dos cuidados de saúde primários e das entidades de apoio social,
+            que presta serviços domiciliários, a pessoas em situação de dependência funcional, doença terminal ou em
+            processo de convalescença, cuja situação não requer internamento, mas que não podem deslocar-se do domicílio
+            (n.º 1 do Art. 27.º do Decreto-Lei n.º 101/2006, de 6 de Junho)</p>
+        </div>
+        <div id="tabaco" class="texto">
+            <p>O tabaco é a principal causa de morte prevenível no mundo desenvolvido. A cessação tabágica está indicada
+                para todo o fumador, independentemente da idade, estádio da doença ou anos de hábito
+                tabágico.<br><br>Abandonar o consumo de tabaco não é tarefa fácil, mas a vontade e motivação individual
+                e a ajuda de técnicos de saúde especializados podem ser a chave para o sucesso.<br><br>A UCC de
+                Albergaria-a-Velha, apresenta na sua carteira de serviços a consulta de Cessação Tabágica que tem como
+                principal objetivo ajudar as pessoas fumadoras a deixar de fumar e/ou evitar e diminuir o número de
+                recaídas.</p>
+        </div>
+        <div id="cancro" class="texto">
+            <p>No dia 4 de fevereiro, assinala-se o <strong>Dia Mundial da Luta contra o Cancro</strong>.
+                <br>&nbsp;<br>
+                Aproximadamente 1/3 de todas as mortes por cancro estão relacionadas com hábitos alimentares inadequados
+                e inatividade física sendo que, destes, a associação de excesso peso e inatividade física é responsável
+                por 26% das mortes por cancro colo-retal e 19% por cancro da mama. Estes dois fatores são importantes na
+                prevenção como no tratamento de cancro, contribuindo para a manutenção ou melhoria de qualidade de vida,
+                tal como redução ansiedade, cansaço, otimização da composição corporal, nomeadamente da massa muscular,
+                interferindo na otimização do risco de recidiva e da sobrevida. <em><a
+                        href="https://www.ligacontracancro.pt/factores-de-risco/">(https://www.ligacontracancro.pt/factores-de-risco/)</a></em>
+                <br>&nbsp;<br>
+                A saber:
+            <ul>
+                <li>1/3 das mortes por cancro é atribuído a hábitos alimentares inadequados e à inatividade física;</li>
+                <li>75 a 80% da maioria dos cancros têm como causa fatores associados ao estilo de vida;</li>
+                <li>30% dos cancros estão direta ou indiretamente relacionados com a nutrição;</li>
+                <li>40% dos cancros podem ser evitados com alterações no estilo de vida.</li>
+            </ul>
+            </p>
+        </div>
+        <div id="vacinas" class="texto">
+            <p>O plano de vacinação contra a Covid-19 já está a decorrer em Albergaria-a-Velha, abrangendo os/as
+                profissionais de saúde do Concelho. No início de 2021, as vacinas deverão começar a chegar aos lares,
+                permitindo a imunização das pessoas idosas e cuidadores/as.</p>
+            <p>Apesar de estarmos a viver um momento-chave na luta contra a Covid-19, que nos traz esperança, ainda não
+                é hora de baixarmos a guarda. O vírus continua ativo, continua a infetar a população e, infelizmente, a
+                causar mortes. As medidas de proteção individual - uso de máscara, higienização das mãos, distanciamento
+                social - devem manter-se. Ao sermos cuidadosos/as, estamos a proteger-nos e também a proteger os outros,
+                especialmente os/as mais vulneráveis.</p>
         </div>
     </div>
 
@@ -92,18 +148,30 @@
 
                 <p>CC: <input type="text" required /></p>
                 <p>Sexo: <select name="SX" required>
+                        <option value="" disabled selected hidden>Selecione...</option>
                         <option value="1">Masculino</option>
                         <option value="2">Feminino</option>
 
                     </select></p>
 
-                <p>Data de Nacismento: <input type="date" required /></p>
-                <p>Email: <input type="text" placeholder="@gmail.com" required /> </p>
+                <p>Data de Nascimento: <input type="date" required /></p>
+                <p>Email: <input type="email" placeholder="@gmail.com" required /> </p>
                 <p>Morada: <input type="text" required /> </p>
-                <input type="submit" value="Enviar">
+                <p>Médico: <select name="medico" id="medico">
+                        <option value="" disabled selected hidden>Selecione...</option>
+                        <option value="1">António Marques Melo</option>
+                        <option value="2">Laerte Martins Mota</option>
+                        <option value="3">Margarida Maria Santos Roca</option>
+                        <option value="4">Paulo Jorge Sa Ribeiro</option>
+                        <option value="5">Sandra Susana Ribeiro Melo Gonçalves</option>
+                    </select></p>
+                <p>Comentários: </p><textarea cols="35" rows="10" name="comments" placeholder="Escreva aqui"></textarea>
+                <p><input type="submit" value="Enviar"></p>
 
             </form>
         </div>
+    </div>
+
 
 </body>
 

@@ -80,17 +80,22 @@
   }
 
   
-  .stress { 
+  .stress{ 
     position: relative;
     right:20px;
     bottom:50px;
     float: right;
     display: flex;
     text-decoration: none;
-    color: #900c3f; 
-    
+    color: #900c3f;  
   }
 
+  .texto{
+    display:none;
+  }
+  .texto.active{
+    display:block;
+  }
   span{
     display:block;
     color: red;
@@ -103,6 +108,12 @@
     right:20px;
     bottom:50px;
     float: right;
+  }
+
+  .Programas{
+    position: relative;
+    top:15px;
+    padding:50px;
   }
   
   @media screen and (max-width: 670px) {
